@@ -1,8 +1,8 @@
 <script lang="ts">
   import { browser } from '$app/env';
-  import websiteConfiguration from '$lib/config/website';
+  import website from '$lib/config/website';
   import type { Map, MapOptions, TileLayer, TileLayerOptions } from 'leaflet';
-  import { onDestroy, onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
   export let id: string;
   export let location: {
@@ -10,8 +10,10 @@
     longitude: number;
   };
   export let zoom: number = 19;
+  // export let mapboxAccessToken: string;
+  export let style: string = 'width:425px; height:350px';
 
-  const { mapboxAccessToken } = websiteConfiguration;
+  const { mapboxAccessToken } = website;
   const { latitude, longitude } = location;
 
   let leaflet: {
@@ -33,7 +35,7 @@
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
-            accessToken: mapboxAccessToken as string,
+            accessToken: mapboxAccessToken,
             detectRetina: true,
           },
         )
@@ -41,9 +43,11 @@
     }
   });
 
-  onDestroy(() => {
-    leaflet = null;
-  });
+  // onDestroy(() => {
+  // 	if (leaflet) {
+  // 		leaflet = undefined;
+  // 	}
+  // });
 </script>
 
 <svelte:head>
@@ -59,4 +63,4 @@
     crossorigin=""></script>
 </svelte:head>
 
-<div {id} style="width:425px; height:350px" />
+<div {id} {style} />
