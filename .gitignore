@@ -1,0 +1,21 @@
+# SvelteKit Files
+build/
+functions/
+/.svelte-kit
+
+# Dependency directories
+node_modules/
+/package
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env*
+!.env.EXAMPLE
+
+# Mac files
+.DS_Store
+
+# Local Netlify folder
+.netlify
