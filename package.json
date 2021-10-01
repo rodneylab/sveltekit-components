@@ -12,10 +12,6 @@
     "openstreetmap"
   ],
   "svelte": "index.js",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "dev": "svelte-kit dev -p 3000",
     "build": "svelte-kit build",
