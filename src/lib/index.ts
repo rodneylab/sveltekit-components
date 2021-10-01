@@ -1,3 +1,3 @@
-import Map from './components/Map.svelte';
+import Map from '$lib/components/Map.svelte';
 
 export { Map };
