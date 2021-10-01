@@ -1,4 +1,4 @@
-<img src="https://github.com/rodneylab/sveltekit-componetns/raw/main/images/rodneylab-github-sveltekit-components.png" alt="Rodney Lab sveltekit-components Github banner">
+<img src="https://github.com/rodneylab/sveltekit-components/raw/main/images/rodneylab-github-sveltekit-components.png" alt="Rodney Lab sveltekit-components Github banner">
 
 <p align="center">
   <a aria-label="Open Rodney Lab site" href="https://rodneylab.com" rel="nofollow noopener noreferrer">
