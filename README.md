@@ -13,13 +13,13 @@
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-components)
 
-Library of TypeScript friendly Sveltekit Components for adding functionality to your SvelteKit sites.
+Library of TypeScript friendly SvelteKit components for adding functionality to your SvelteKit apps.
 
 ## Setup
 
 To install the package run
 
-```
+```shell
 pnpm install -D @rodneylab/sveltekit-components
 ```
 
@@ -28,10 +28,22 @@ pnpm install -D @rodneylab/sveltekit-components
 ### Map
 
 Add a map to you SvelteKit site using <a aria-label="Learn more about Map box" href="https://www.mapbox.com/">Mapbox</a> with <a aria-label="Learn more about Open street map" href="https://www.openstreetmap.org/#map=6/54.910/-3.432">OpenStreetMap</a> and <a aria-label="Learn about leaflet j s" href="https://leafletjs.com/
-">LeafletJS</a>. Requires a Mapbox access token, just add your to the `.env` file in your project:
+">LeafletJS</a>. Requires a Mapbox access token, just add it your to the `.env` file in your project:
 
 ```plaintext
 VITE_MAPBOX_ACCESS_TOKEN=your.token
+```
+
+If you don't yet have environment variables configured in your project, add the `dotenv` package:
+
+```shell
+pnpm install -D dotenv
+```
+
+And the add it in your `svelte.config.js` file:
+
+```javascript
+import 'dotenv/config';
 ```
 
 Add the component to a `.svelte` file in your project:
@@ -50,4 +62,4 @@ Add the component to a `.svelte` file in your project:
 
 ## Further Info
 
-To create your own SvelteKit component Library see the video on <a aria-label="Learn how to create a Svelte Kit Component library" href="https://rodneylab.com/create-sveltekit-component-library/">creating a SvelteKit component library</a>. Drop a comment there if you have a question.
+To create your own SvelteKit component library see the video on <a aria-label="Learn how to create a Svelte Kit Component library" href="https://rodneylab.com/create-sveltekit-component-library/">creating a SvelteKit component library</a>. Drop a comment on that page if you have a question.
