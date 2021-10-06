@@ -38,3 +38,9 @@
     {/if}
   </InputField>
 </div>
+
+<style>
+  input {
+    width: 100%;
+  }
+</style>
