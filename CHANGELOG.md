@@ -1,3 +1,9 @@
+## 0.1.1 (2021-10-06)
+
+### Fix
+
+- 💫 add style prop to forms elements
+
 ## 0.1.0 (2021-10-06)
 
 ### Feat
