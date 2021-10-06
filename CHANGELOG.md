@@ -1,3 +1,13 @@
+## 0.1.0 (2021-10-06)
+
+### Feat
+
+- ✨ add form input fields
+
+### Fix
+
+- **dependencies**: 💫 update packages
+
 ## 0.0.7 (2021-10-02)
 
 ### Fix
