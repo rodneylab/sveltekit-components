@@ -10,28 +10,31 @@
   export let title: string;
   export let error: string | null = null;
   export let dataList: string[] | null = null;
+  export let style: string = '';
 </script>
 
-<InputField {id} {title} {error}>
-  <input
-    bind:value
-    on:change={() => {
-      dispatch('update', value);
-    }}
-    {required}
-    {id}
-    aria-invalid={error != null}
-    aria-describedby={error != null ? `${id}-error` : null}
-    {placeholder}
-    {title}
-    type="text"
-    list={dataList ? `${id}-list` : null}
-  />
-  {#if dataList}
-    <datalist id={`${id}-list`}>
-      {#each dataList as value}
-        <option {value} />
-      {/each}
-    </datalist>
-  {/if}
-</InputField>
+<div {style}>
+  <InputField {id} {title} {error}>
+    <input
+      bind:value
+      on:change={() => {
+        dispatch('update', value);
+      }}
+      {required}
+      {id}
+      aria-invalid={error != null}
+      aria-describedby={error != null ? `${id}-error` : null}
+      {placeholder}
+      {title}
+      type="text"
+      list={dataList ? `${id}-list` : null}
+    />
+    {#if dataList}
+      <datalist id={`${id}-list`}>
+        {#each dataList as value}
+          <option {value} />
+        {/each}
+      </datalist>
+    {/if}
+  </InputField>
+</div>

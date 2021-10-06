@@ -10,21 +10,24 @@
   export let title: string;
   export let error: string | null = null;
   export let rows: number = 5;
+  export let style: string = '';
 </script>
 
-<InputField {id} {title} {error}>
-  <textarea
-    bind:value
-    on:change={() => {
-      dispatch('update', value);
-    }}
-    {required}
-    {id}
-    aria-invalid={error != null}
-    aria-describedby={error != null ? `${id}-error` : null}
-    {rows}
-    {placeholder}
-    {title}
-    type="text"
-  />
-</InputField>
+<div {style}>
+  <InputField {id} {title} {error}>
+    <textarea
+      bind:value
+      on:change={() => {
+        dispatch('update', value);
+      }}
+      {required}
+      {id}
+      aria-invalid={error != null}
+      aria-describedby={error != null ? `${id}-error` : null}
+      {rows}
+      {placeholder}
+      {title}
+      type="text"
+    />
+  </InputField>
+</div>

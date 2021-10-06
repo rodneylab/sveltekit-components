@@ -9,19 +9,22 @@
   export let id: string;
   export let title: string = 'Email';
   export let error: string | null = null;
+  export let style: string = '';
 </script>
 
-<InputField {id} {title} {error}>
-  <input
-    bind:value
-    on:change={() => {
-      dispatch('update', value);
-    }}
-    {required}
-    {id}
-    {placeholder}
-    {title}
-    type="email"
-    spellcheck
-  />
-</InputField>
+<div {style}>
+  <InputField {id} {title} {error}>
+    <input
+      bind:value
+      on:change={() => {
+        dispatch('update', value);
+      }}
+      {required}
+      {id}
+      {placeholder}
+      {title}
+      type="email"
+      spellcheck
+    />
+  </InputField>
+</div>

@@ -35,26 +35,29 @@
     on:update={(event) => {
       name = event.detail;
     }}
+    style="padding-bottom:1rem"
   />
   <EmailInputField
     value={email}
     id="form-email"
-    placeholder="blake@example.co"
+    placeholder="blake@example.com"
     title="Email"
     error={errors?.email ?? null}
     on:update={(event) => {
       email = event.detail;
     }}
+    style="padding-bottom:1rem"
   />
   <TextArea
     value={message}
     id="form-message"
     placeholder="Enter your message here"
-    title="Email"
+    title="Message"
     error={errors?.message ?? null}
     on:update={(event) => {
       message = event.detail;
     }}
+    style="padding-bottom:1rem"
   />
   <button type="submit" disabled={submitting}>Submit form</button>
 </form>
