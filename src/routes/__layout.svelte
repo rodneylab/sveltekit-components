@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <span calss="element"><a aria-label="Go to home page" href="/">Home</a></span>
+    <span class="element"><a aria-label="Go to home page" href="/">Home</a></span>
     <span class="element"
       ><a aria-label="Open form example" href="/form">Form Input Fields Example</a></span
     >
