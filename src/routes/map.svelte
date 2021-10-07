@@ -1,5 +1,5 @@
 <script>
-  import Map from '$lib/components/Map.svelte';
+  import { Map } from '$lib';
 
   const latitude = 51.50162;
   const longitude = -0.14115;

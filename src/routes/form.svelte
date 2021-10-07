@@ -1,8 +1,5 @@
 <script lang="ts">
-  import EmailInputField from '$lib/components/EmailInputField.svelte';
-  import PasswordInputField from '$lib/components/PasswordInputField.svelte';
-  import TextArea from '$lib/components/TextArea.svelte';
-  import TextInputField from '$lib/components/TextInputField.svelte';
+  import { EmailInputField, PasswordInputField, TextArea, TextInputField } from '$lib';
 
   let name = '';
   let email = '';

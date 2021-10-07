@@ -27,7 +27,7 @@ pnpm install -D @rodneylab/sveltekit-components
 
 ### Form Fields
 
-Add accessible text, email and password inputs to your SvelteKit site. See <a href="https://github.com/rodneylab/sveltekit-components/raw/main/src/routes/form.svelte">full SvelteKit form examples</a> or get started with example below:
+Add accessible text, email and password inputs to your SvelteKit site. See <a href="https://github.com/rodneylab/sveltekit-components/blob/main/src/routes/form.svelte">full SvelteKit form examples</a> or get started with extracts below:
 
 ```svelte
 <script lang="ts">
@@ -37,48 +37,6 @@ Add accessible text, email and password inputs to your SvelteKit site. See <a hr
     TextArea,
     TextInputField,
   } from '@rodneylab/sveltekit-components';
-
-  let name = '';
-  let email = '';
-  let message = '';
-  let password = '';
-  let errors: {
-    name?: string;
-    email?: string;
-    message?: string;
-    password?: string;
-  };
-  $: errors = {};
-
-  const emailRegex =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  function clearFormFields() {
-    name = '';
-    email = '';
-    message = '';
-  }
-
-  function validateInputs() {
-    if (name.trim() === '') {
-      errors = { ...errors, name: 'Enter your name' };
-    }
-    if (!emailRegex.test(email)) {
-      errors = { ...errors, email: 'Enter a valid email' };
-    }
-    if (message.trim() === '') {
-      errors = { ...errors, message: 'Enter a message' };
-    } else if (message.length > 256) {
-      errors = { ...errors, message: 'Enter a shorter message' };
-    }
-  }
-
-  function handleSubmit() {
-    validateInputs();
-    console.log('Details: ', { name, email, message });
-    clearFormFields();
-  }
-  $: submitting = false;
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
