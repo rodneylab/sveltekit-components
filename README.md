@@ -27,7 +27,7 @@ pnpm install -D @rodneylab/sveltekit-components
 
 ### Form Fields
 
-Add accessible text, email and password inputs to your SvelteKit site. See <a href="https://github.com/rodneylab/sveltekit-components/blob/main/src/routes/form.svelte">full SvelteKit form examples</a> or get started with extracts below:
+Add accessible text, email and password inputs to your SvelteKit site forms. See <a href="https://github.com/rodneylab/sveltekit-components/blob/main/src/routes/form.svelte">full SvelteKit form examples</a> or get started with extracts below:
 
 ```svelte
 <script lang="ts">
