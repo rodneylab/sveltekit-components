@@ -1,7 +1,6 @@
 <script lang="ts">
   import InputField from '$lib/components/InputField.svelte';
   import { createEventDispatcher } from 'svelte';
-  const dispatch = createEventDispatcher();
 
   export let value: string;
   export let required: boolean = false;
@@ -11,6 +10,8 @@
   export let error: string | null = null;
   export let rows: number = 5;
   export let style: string = '';
+
+  const dispatch = createEventDispatcher();
 </script>
 
 <div {style}>
@@ -35,5 +36,6 @@
 <style>
   textarea {
     width: 100%;
+    resize: none;
   }
 </style>

@@ -7,4 +7,9 @@
   const location = { latitude, longitude };
 </script>
 
-<Map id="my-map" {location} {zoom} />
+<svelte:head><title>Map</title></svelte:head>
+
+<main>
+  <h1>Map</h1>
+  <Map id="my-map" {location} {zoom} />
+</main>

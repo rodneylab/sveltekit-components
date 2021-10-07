@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head><title>Home</title></svelte:head>
+<main>
+  <h1>SvelteKit Components</h1>
+  <nav aria-label="index-nav">
+    <a aria-label="Open form example" href="/form">Form Input Fields Example</a>
+    <a aria-label="Open map example" href="/map">Map Example</a>
+  </nav>
+</main>
+
+<style>
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

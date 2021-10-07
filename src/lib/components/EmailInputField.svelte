@@ -1,7 +1,6 @@
 <script lang="ts">
   import InputField from '$lib/components/InputField.svelte';
   import { createEventDispatcher } from 'svelte';
-  const dispatch = createEventDispatcher();
 
   export let value: string;
   export let required: boolean = false;
@@ -10,6 +9,8 @@
   export let title: string = 'Email';
   export let error: string | null = null;
   export let style: string = '';
+
+  const dispatch = createEventDispatcher();
 </script>
 
 <div {style}>

@@ -4,13 +4,11 @@
 
   export let value: string;
   export let required: boolean = false;
-  export let placeholder: string;
+  export let placeholder: string = 'P@$sw0rd!';
   export let id: string;
-  export let title: string;
+  export let title: string = 'Password';
   export let error: string | null = null;
-  export let dataList: string[] | null = null;
   export let style: string = '';
-
   const dispatch = createEventDispatcher();
 </script>
 
@@ -23,20 +21,10 @@
       }}
       {required}
       {id}
-      aria-invalid={error != null}
-      aria-describedby={error != null ? `${id}-error` : null}
       {placeholder}
       {title}
-      type="text"
-      list={dataList ? `${id}-list` : null}
+      type="password"
     />
-    {#if dataList}
-      <datalist id={`${id}-list`}>
-        {#each dataList as value}
-          <option {value} />
-        {/each}
-      </datalist>
-    {/if}
   </InputField>
 </div>
 
