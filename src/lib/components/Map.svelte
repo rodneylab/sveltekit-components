@@ -20,7 +20,7 @@
     tileLayer: (urlTemplate: string, options?: TileLayerOptions) => TileLayer;
   };
 
-  onMount(() => {
+  function setMap() {
     if (browser) {
       leaflet = window.L;
       const map = leaflet.map(id).setView([latitude, longitude], zoom);
@@ -40,16 +40,18 @@
         )
         .addTo(map);
     }
+  }
+
+  onMount(() => {
+    setMap();
   });
 
-  // onDestroy(() => {
-  // 	if (leaflet) {
-  // 		leaflet = undefined;
-  // 	}
-  // });
+  // beforeUpdate(() => setMap());
 </script>
 
 <svelte:head>
+  <link rel="preconnect" href="https://unpkg.com" />,
+  <link rel="dns-prefetch" href="https://unpkg.com" />,
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
