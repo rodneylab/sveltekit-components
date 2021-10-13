@@ -1,7 +1,14 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import website from '$lib/config/website';
-  import type { Map, MapOptions, TileLayer, TileLayerOptions } from 'leaflet';
+  import type {
+    LatLngExpression,
+    Map,
+    MapOptions,
+    Marker,
+    TileLayer,
+    TileLayerOptions,
+  } from 'leaflet';
   import { onMount } from 'svelte';
 
   export let id: string;
@@ -11,12 +18,15 @@
   };
   export let zoom: number = 19;
   export let style: string = 'width:425px; height:350px';
+  export let marker: boolean = false;
+  export let markerMarkup: string = '';
 
   const { mapboxAccessToken } = website;
   const { latitude, longitude } = location;
 
   let leaflet: {
     map: (element: string | HTMLElement, options?: MapOptions) => Map;
+    marker: (latLong: LatLngExpression) => Marker;
     tileLayer: (urlTemplate: string, options?: TileLayerOptions) => TileLayer;
   };
 
@@ -39,14 +49,19 @@
           },
         )
         .addTo(map);
+      if (marker) {
+        if (markerMarkup) {
+          const marker = leaflet.marker([latitude, longitude]).bindPopup(markerMarkup).addTo(map);
+        } else {
+          const marker = leaflet.marker([latitude, longitude]).addTo(map);
+        }
+      }
     }
   }
 
   onMount(() => {
     setMap();
   });
-
-  // beforeUpdate(() => setMap());
 </script>
 
 <svelte:head>
