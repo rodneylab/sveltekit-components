@@ -1,3 +1,9 @@
+## 0.2.2 (2021-10-13)
+
+### Fix
+
+- **map**: 💫 add marker with optional popup to Map component
+
 ## 0.2.1 (2021-10-13)
 
 ### Fix
