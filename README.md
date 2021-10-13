@@ -142,7 +142,7 @@ For lazyloading, load the vanilla-lazyload script into the document in a layout 
   }
 ```
 
-Then use the Image component on a page:
+Then use the `Image` component on a page:
 
 ```svelte
 <script>
@@ -196,6 +196,8 @@ Best practise is to load the largest contentful paint above the fold eagerly. Ty
 <dt><code>sizes: string</code></dt><dd>Media query like string which helps the browser choose the right image size.</dd>
 <dt><code>loading: string</code></dt><dd>Can be <code>eager</code> or <code>lazy</code>. Default is <code>lazy</code>.</dd>
 </dl>
+
+See <a aria-label="Open post on SvelteKit image plugin" href="https://rodneylab.com/sveltekit-image-plugin/">article on SvelteKit images which provides much more background</a> on what these props are and how you might update them.
 
 ### Map
 
