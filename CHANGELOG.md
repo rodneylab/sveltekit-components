@@ -1,7 +1,17 @@
-## 0.1.3 (2021-10-07)
+## 0.2.0 (2021-10-13)
+
+### Feat
+
+- 📸 add Image component
 
 ### Fix
 
+- 💫 update Map component with preconnect
+- **dependencies**: 💫 update packages
+- 💫 add node version file
+- 💫 add static adapter
+- 💫 update examples
+- **\_\_layout**: ✅ typo
 - 💫 add password input, imprive docs
 
 ## 0.1.2 (2021-10-06)
