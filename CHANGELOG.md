@@ -1,3 +1,10 @@
+## 0.2.3 (2021-10-15)
+
+### Fix
+
+- **Map**: ✅ remove unnecsessary commas
+- **dependencies**: 💫 update package
+
 ## 0.2.2 (2021-10-13)
 
 ### Fix
