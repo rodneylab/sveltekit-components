@@ -51,9 +51,9 @@
         .addTo(map);
       if (marker) {
         if (markerMarkup) {
-          const marker = leaflet.marker([latitude, longitude]).bindPopup(markerMarkup).addTo(map);
+          leaflet.marker([latitude, longitude]).bindPopup(markerMarkup).addTo(map);
         } else {
-          const marker = leaflet.marker([latitude, longitude]).addTo(map);
+          leaflet.marker([latitude, longitude]).addTo(map);
         }
       }
     }
@@ -65,8 +65,8 @@
 </script>
 
 <svelte:head>
-  <link rel="preconnect" href="https://unpkg.com" />,
-  <link rel="dns-prefetch" href="https://unpkg.com" />,
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
