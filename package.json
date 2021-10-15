@@ -21,7 +21,8 @@
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "prepare": "husky install",
-    "prettier:check": "prettier --check --plugin-search-dir=. ."
+    "prettier:check": "prettier --check --plugin-search-dir=. .",
+    "svelte-check": "svelte-check --fail-on-hints --ignore package"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
@@ -32,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "dotenv": "^10.0.0",
-    "eslint": "^8.0.0",
+    "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "husky": "^7.0.2",
