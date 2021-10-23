@@ -1,3 +1,11 @@
+## 0.2.4 (2021-10-23)
+
+### Fix
+
+- **map**: 💫 add impotrance prop for browser optimisation
+- **map**: 💫 add impotrance prop for browser optimisation
+- **dependencies**: 💫 update packages
+
 ## 0.2.3 (2021-10-15)
 
 ### Fix
