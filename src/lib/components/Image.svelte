@@ -7,7 +7,8 @@
   export let width: number; // needed to reduce CLS
   export let maxWidth: string = '1280px';
   export let sizes: string = `(max-width: ${maxWidth}) 100vw, ${maxWidth}}`;
-  export let loading: string = 'lazy';
+  export let importance: 'auto' | 'high' | 'low' | undefined = undefined;
+  export let loading: 'lazy' | 'eager' = 'lazy';
   export let style: string = '';
 </script>
 
@@ -18,6 +19,7 @@
   <img
     class="lazy"
     {alt}
+    {importance}
     {loading}
     decoding="async"
     {width}
