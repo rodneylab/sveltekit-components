@@ -20,6 +20,7 @@
   export let style: string = 'width:425px; height:350px';
   export let marker: boolean = false;
   export let markerMarkup: string = '';
+  export let importance: 'auto' | 'high' | 'low' | undefined = undefined;
 
   const { mapboxAccessToken } = website;
   const { latitude, longitude } = location;
@@ -70,12 +71,15 @@
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    {importance}
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""
   />
   <script
     src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    {importance}
+    async
     crossorigin=""></script>
 </svelte:head>
 

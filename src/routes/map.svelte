@@ -11,5 +11,5 @@
 
 <main>
   <h1>Map</h1>
-  <Map id="my-map" {location} {zoom} />
+  <Map id="my-map" {location} {zoom} importance="high" />
 </main>
