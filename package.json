@@ -16,7 +16,7 @@
     "dev": "svelte-kit dev -p 3000 --https",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview -p 3000",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-hints --ignore package",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
