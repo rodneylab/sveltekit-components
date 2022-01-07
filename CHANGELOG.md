@@ -1,3 +1,9 @@
+## Unreleased
+
+### Fix
+
+- **dependencies**: 💫 update packages
+
 ## 0.2.5 (2021-12-14)
 
 ### Fix

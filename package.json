@@ -1,7 +1,7 @@
 {
   "name": "@rodneylab/sveltekit-components",
   "description": "Handy components for building sites in SvelteKit",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": "Rodney Lab <ask@rodneylab.com> (@rodneyLab)",
   "license": "BSD-3-Clause",
   "keywords": [
