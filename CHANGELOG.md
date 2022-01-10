@@ -1,3 +1,9 @@
+## 0.2.7 (2022-01-10)
+
+### Fix
+
+- **map**: source leaflet from package rather than cdn
+
 ## 0.2.6 (2022-01-07)
 
 ### Fix
