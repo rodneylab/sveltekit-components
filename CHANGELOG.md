@@ -1,3 +1,11 @@
+## 0.2.9 (2022-01-24)
+
+### Fix
+
+- 💫 add spellcheck option to TextArea
+- **dependencies**: 💫 update packages
+- 💫 update license
+
 ## 0.2.8 (2022-01-10)
 
 ### Fix
