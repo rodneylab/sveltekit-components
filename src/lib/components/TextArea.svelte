@@ -10,7 +10,9 @@
   export let error: string | null = null;
   export let rows: number = 5;
   export let style: string = '';
+  export let spellcheck: boolean = false;
 
+  export let edited = false;
   const dispatch = createEventDispatcher();
 </script>
 
@@ -28,6 +30,7 @@
       {rows}
       {placeholder}
       {title}
+      {spellcheck}
       type="text"
     />
   </InputField>

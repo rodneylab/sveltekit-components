@@ -77,6 +77,7 @@
       id="form-message"
       placeholder="Enter your message here"
       title="Message"
+      spellcheck
       error={errors?.message ?? null}
       on:update={(event) => {
         message = event.detail;
