@@ -12,7 +12,6 @@
   export let style: string = '';
   export let spellcheck: boolean = false;
 
-  export let edited = false;
   const dispatch = createEventDispatcher();
 </script>
 
