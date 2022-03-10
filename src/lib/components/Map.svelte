@@ -68,6 +68,7 @@
 <svelte:head>
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="dns-prefetch" href="https://unpkg.com" />
+  <link rel="preload" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" />
   <link rel="preconnect" href="https://api.mapbox.com" />
   <link rel="dns-prefetch" href="https://api.mapbox.com" />
   <link
