@@ -1,3 +1,11 @@
+## 0.2.11 (2022-03-10)
+
+### Fix
+
+- 💫 update Map component
+- 💫 update for SvelteKit changes
+- **dependencies**: 💫 update packages
+
 ## 0.2.10 (2022-01-25)
 
 ### Fix
