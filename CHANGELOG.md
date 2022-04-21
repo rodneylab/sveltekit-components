@@ -1,3 +1,10 @@
+## 0.2.12 (2022-04-21)
+
+### Fix
+
+- **demos/astro-contact-form**: 💫 update packages
+- 💫 update for SvelteKit breaking changes
+
 ## 0.2.11 (2022-03-10)
 
 ### Fix
@@ -57,7 +64,7 @@
 
 ### Fix
 
-- **Map**: ✅ remove unnecsessary commas
+- **Map**: ✅ remove unnecsessary  commas
 - **dependencies**: 💫 update package
 
 ## 0.2.2 (2021-10-13)
@@ -85,7 +92,7 @@
 - 💫 add node version file
 - 💫 add static adapter
 - 💫 update examples
-- **\_\_layout**: ✅ typo
+- **__layout**: ✅ typo
 - 💫 add password input, imprive docs
 
 ## 0.1.2 (2021-10-06)
