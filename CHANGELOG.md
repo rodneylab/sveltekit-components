@@ -1,3 +1,10 @@
+## 0.2.12 (2022-04-21)
+
+### Fix
+
+- **demos/astro-contact-form**: 💫 update packages
+- 💫 update for SvelteKit breaking changes
+
 ## 0.2.11 (2022-03-10)
 
 ### Fix
