@@ -1,3 +1,9 @@
+## 0.2.13 (2022-06-03)
+
+### Fix
+
+- 💫 update for SvelteKit breaking changes
+
 ## 0.2.12 (2022-04-21)
 
 ### Fix
