@@ -11,7 +11,7 @@
 
 # sveltekit-components
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-components)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-components)
 
 Library of TypeScript friendly SvelteKit components for adding functionality to your SvelteKit apps.
 
@@ -237,3 +237,5 @@ Add the component to a `.svelte` file in your project:
 ## Further Info
 
 To create your own SvelteKit component library see the video on <a aria-label="Learn how to create a Svelte Kit Component library" href="https://rodneylab.com/create-sveltekit-component-library/">creating a SvelteKit component library</a>. Drop a comment on that page if you have a question.
+
+Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
