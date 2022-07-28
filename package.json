@@ -13,9 +13,9 @@
   ],
   "svelte": "index.js",
   "scripts": {
-    "dev": "vite dev --port 3030 --https",
+    "dev": "vite dev --port 3000 --https",
     "build": "vite build",
-    "preview": "vite preview --port 3030",
+    "preview": "vite preview --port 3000",
     "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-hints --ignore package",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write --plugin-search-dir=. .",
