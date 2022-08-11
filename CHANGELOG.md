@@ -1,3 +1,15 @@
+## 0.2.14 (2022-08-11)
+
+### Fix
+
+- 💫 update map example
+- 🐞 address issue with map marker not being bundled
+- **dependencies**: 💫 update packages
+- 💫 update server ports in pacakge.json
+- 💫 update favicons
+- 💫 update for SvelteKit breaking changes
+- **dependencies**: 💫 update packages
+
 ## 0.2.13 (2022-06-03)
 
 ### Fix
