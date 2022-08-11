@@ -11,5 +11,11 @@
 
 <main>
   <h1>Map</h1>
-  <Map id="my-map" {location} {zoom} importance="high" />
+  <Map
+    id="my-map"
+    {location}
+    {zoom}
+    importance="high"
+    markerMarkup="<p>We are <strong>here</strong>!</p>"
+  />
 </main>

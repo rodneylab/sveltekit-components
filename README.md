@@ -231,7 +231,13 @@ Add the component to a `.svelte` file in your project:
   const location = { latitude, longitude };
 </script>
 
-<Map id="my-map" {location} {zoom} style="width:425px; height:350px" />
+  <Map
+    id="my-map"
+    {location}
+    {zoom}
+    importance="high"
+    markerMarkup="<p>We are <strong>here</strong>!</p>"
+  />
 ```
 
 ## Further Info
