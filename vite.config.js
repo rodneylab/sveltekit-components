@@ -3,7 +3,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-  plugins: [basicSsl(), sveltekit()],
+	plugins: [basicSsl(), sveltekit()],
 };
 
 export default config;

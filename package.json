@@ -1,64 +1,64 @@
 {
-  "name": "@rodneylab/sveltekit-components",
-  "description": "Handy components for building sites in SvelteKit",
-  "version": "0.2.13",
-  "author": "Rodney Lab <ask@rodneylab.com> (@rodneyLab)",
-  "license": "BSD-3-Clause",
-  "keywords": [
-    "svelte",
-    "sveltekit",
-    "map",
-    "mapbox",
-    "openstreetmap"
-  ],
-  "svelte": "index.js",
-  "scripts": {
-    "dev": "vite dev --https",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-hints --ignore package",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "format": "prettier --write --plugin-search-dir=. .",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "prepare": "husky install",
-    "prettier:check": "prettier --check --plugin-search-dir=. .",
-    "svelte-check": "svelte-check --fail-on-hints --ignore package"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@sveltejs/adapter-static": "^1.0.0-next.39",
-    "@sveltejs/kit": "next",
-    "@types/leaflet": "^1.7.11",
-    "@types/node": "^18.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "@vitejs/plugin-basic-ssl": "^0.1.1",
-    "dotenv": "^16.0.1",
-    "eslint": "^8.21.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-svelte3": "^4.0.0",
-    "husky": "^8.0.1",
-    "leaflet": "^1.8.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-svelte": "^2.7.0",
-    "svelte": "^3.49.0",
-    "svelte-check": "^2.8.0",
-    "svelte-preprocess": "^4.10.7",
-    "svelte2tsx": "^0.5.13",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4",
-    "vite": "^3.0.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rodneylab/sveltekit-components"
-  },
-  "bugs": {
-    "url": "https://github.com/rodneylab/sveltekit-components/issues"
-  },
-  "type": "module",
-  "peerDependencies": {
-    "vite": "^3.0.3"
-  }
+	"name": "@rodneylab/sveltekit-components",
+	"description": "Handy components for building sites in SvelteKit",
+	"version": "0.2.13",
+	"author": "Rodney Lab <ask@rodneylab.com> (@rodneyLab)",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"map",
+		"mapbox",
+		"openstreetmap"
+	],
+	"svelte": "index.js",
+	"scripts": {
+		"dev": "vite dev --https",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json --fail-on-hints --ignore package",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"prepare": "husky install",
+		"prettier:check": "prettier --check --plugin-search-dir=. .",
+		"svelte-check": "svelte-check --fail-on-hints --ignore package"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"@sveltejs/adapter-static": "^1.0.0-next.39",
+		"@sveltejs/kit": "next",
+		"@types/leaflet": "^1.7.11",
+		"@types/node": "^18.7.1",
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"@vitejs/plugin-basic-ssl": "^0.1.1",
+		"dotenv": "^16.0.1",
+		"eslint": "^8.21.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"husky": "^8.0.1",
+		"leaflet": "^1.8.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.49.0",
+		"svelte-check": "^2.8.0",
+		"svelte-preprocess": "^4.10.7",
+		"svelte2tsx": "^0.5.13",
+		"tslib": "^2.4.0",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/sveltekit-components"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/sveltekit-components/issues"
+	},
+	"type": "module",
+	"peerDependencies": {
+		"vite": "^3.0.3"
+	}
 }

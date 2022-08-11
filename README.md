@@ -31,75 +31,75 @@ Add accessible text, email and password inputs to your SvelteKit site forms. See
 
 ```svelte
 <script lang="ts">
-  import {
-    EmailInputField,
-    PasswordInputField,
-    TextArea,
-    TextInputField,
-  } from '@rodneylab/sveltekit-components';
+	import {
+		EmailInputField,
+		PasswordInputField,
+		TextArea,
+		TextInputField,
+	} from '@rodneylab/sveltekit-components';
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
-  <TextInputField
-    value={name}
-    id="form-name"
-    placeholder="Blake Jones"
-    title="Name"
-    error={errors?.name ?? null}
-    on:update={(event) => {
-      name = event.detail;
-    }}
-    style="padding-bottom:1rem"
-  />
-  <EmailInputField
-    value={email}
-    id="form-email"
-    placeholder="blake@example.com"
-    title="Email"
-    error={errors?.email ?? null}
-    on:update={(event) => {
-      email = event.detail;
-    }}
-    style="padding-bottom:1rem"
-  />
-  <TextArea
-    value={message}
-    id="form-message"
-    placeholder="Enter your message here"
-    title="Message"
-    error={errors?.message ?? null}
-    on:update={(event) => {
-      message = event.detail;
-    }}
-    style="padding-bottom:1rem"
-  />
-  <button type="submit" disabled={submitting}>Submit form</button>
+	<TextInputField
+		value={name}
+		id="form-name"
+		placeholder="Blake Jones"
+		title="Name"
+		error={errors?.name ?? null}
+		on:update={(event) => {
+			name = event.detail;
+		}}
+		style="padding-bottom:1rem"
+	/>
+	<EmailInputField
+		value={email}
+		id="form-email"
+		placeholder="blake@example.com"
+		title="Email"
+		error={errors?.email ?? null}
+		on:update={(event) => {
+			email = event.detail;
+		}}
+		style="padding-bottom:1rem"
+	/>
+	<TextArea
+		value={message}
+		id="form-message"
+		placeholder="Enter your message here"
+		title="Message"
+		error={errors?.message ?? null}
+		on:update={(event) => {
+			message = event.detail;
+		}}
+		style="padding-bottom:1rem"
+	/>
+	<button type="submit" disabled={submitting}>Submit form</button>
 </form>
 
 <form on:submit|preventDefault={handleSubmit}>
-  <EmailInputField
-    value={email}
-    id="login-email"
-    placeholder="blake@example.com"
-    title="Email"
-    error={errors?.email ?? null}
-    on:update={(event) => {
-      email = event.detail;
-    }}
-    style="padding-bottom:1rem"
-  />
-  <PasswordInputField
-    value={password}
-    id="login-password"
-    placeholder="P@$sw0rD"
-    title="Password"
-    error={errors?.password ?? null}
-    on:update={(event) => {
-      password = event.detail;
-    }}
-    style="padding-bottom:1rem;border-style:none"
-  />
-  <button type="submit" disabled={submitting}>Submit form</button>
+	<EmailInputField
+		value={email}
+		id="login-email"
+		placeholder="blake@example.com"
+		title="Email"
+		error={errors?.email ?? null}
+		on:update={(event) => {
+			email = event.detail;
+		}}
+		style="padding-bottom:1rem"
+	/>
+	<PasswordInputField
+		value={password}
+		id="login-password"
+		placeholder="P@$sw0rD"
+		title="Password"
+		error={errors?.password ?? null}
+		on:update={(event) => {
+			password = event.detail;
+		}}
+		style="padding-bottom:1rem;border-style:none"
+	/>
+	<button type="submit" disabled={submitting}>Submit form</button>
 </form>
 ```
 
@@ -146,29 +146,29 @@ Then use the `Image` component on a page:
 
 ```svelte
 <script>
-  import { onMount } from 'svelte';
-  import { browser } from '$app/env';
-  import { Image } from '@rodneylab/sveltekit-components';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/env';
+	import { Image } from '@rodneylab/sveltekit-components';
 
-  import meta from '$lib/assets/your-image.jpg?w=768&metadata';
-  import srcsetJpeg from '$lib/assets/your-image.jpg?w=1536;1280;768;640&jpeg&srcset';
-  import srcsetWebp from '$lib/assets/your-image.jpg?w=1536;1280;768;640&webp&srcset';
+	import meta from '$lib/assets/your-image.jpg?w=768&metadata';
+	import srcsetJpeg from '$lib/assets/your-image.jpg?w=1536;1280;768;640&jpeg&srcset';
+	import srcsetWebp from '$lib/assets/your-image.jpg?w=1536;1280;768;640&webp&srcset';
 
-  export let imageData;
+	export let imageData;
 
-  onMount(() => {
-    if (browser) {
-      document.lazyloadInstance.update();
-    }
-  });
+	onMount(() => {
+		if (browser) {
+			document.lazyloadInstance.update();
+		}
+	});
 
-  const { width, height, src } = meta;
-  const sources = [
-    { srcset: srcsetWebp, type: 'image/webp' },
-    { srcset: srcsetJpeg, type: 'image/jpeg' },
-  ];
+	const { width, height, src } = meta;
+	const sources = [
+		{ srcset: srcsetWebp, type: 'image/webp' },
+		{ srcset: srcsetJpeg, type: 'image/jpeg' },
+	];
 
-  const sizes = '(max-width: 672px) calc(100vw - 32px), 672px';
+	const sizes = '(max-width: 672px) calc(100vw - 32px), 672px';
 </script>
 
 <Image {alt} {width} {height} {src} {sources} {placeholder} {sizes} style={'border-radius:12px'} />
@@ -224,19 +224,19 @@ Add the component to a `.svelte` file in your project:
 
 ```svelte
 <script>
-  import { Map } from '@rodneylab/sveltekit-components';
-  const latitude = 51.50162;
-  const longitude = -0.14115;
-  const zoom = 16;
-  const location = { latitude, longitude };
+	import { Map } from '@rodneylab/sveltekit-components';
+	const latitude = 51.50162;
+	const longitude = -0.14115;
+	const zoom = 16;
+	const location = { latitude, longitude };
 </script>
 
 <Map
-  id="my-map"
-  {location}
-  {zoom}
-  importance="high"
-  markerMarkup="<p>We are <strong>here</strong>!</p>"
+	id="my-map"
+	{location}
+	{zoom}
+	importance="high"
+	markerMarkup="<p>We are <strong>here</strong>!</p>"
 />
 ```
 
