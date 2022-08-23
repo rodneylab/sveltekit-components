@@ -1,3 +1,9 @@
+## Unreleased
+
+### Fix
+
+- 💫 update for SvelteKit package breaking changes
+
 ## 0.2.15 (2022-08-23)
 
 ### Fix
