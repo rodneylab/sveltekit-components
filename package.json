@@ -59,6 +59,7 @@
 	},
 	"type": "module",
 	"peerDependencies": {
+		"leaflet": "^1.8.0",
 		"vite": "^3.0.3"
 	}
 }
