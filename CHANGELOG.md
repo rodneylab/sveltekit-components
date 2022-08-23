@@ -1,3 +1,11 @@
+## 0.2.15 (2022-08-23)
+
+### Fix
+
+- 💫 update for SvelteKit breaking changes
+- 💫 add leaflet as peer dependency
+- 💫 update node version for cloud build
+
 ## 0.2.14 (2022-08-11)
 
 ### Fix
