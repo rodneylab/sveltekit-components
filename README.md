@@ -20,7 +20,8 @@ Library of TypeScript friendly SvelteKit components for adding functionality to 
 To install the package run
 
 ```shell
-pnpm install -D @rodneylab/sveltekit-components
+pnpm add -D @rodneylab/sveltekit-components
+pnpm add --save-peer leaflet
 ```
 
 ## Components
