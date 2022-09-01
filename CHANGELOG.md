@@ -1,3 +1,10 @@
+## 1.0.0 (2022-09-01)
+
+### Fix
+
+- 💫 update for SvelteKit breaking changes including migrating to $app/environment
+- **dependencies**: 💫 update packages
+
 ## 0.2.16 (2022-08-23)
 
 ### Fix
