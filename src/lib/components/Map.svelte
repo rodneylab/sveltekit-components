@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import website from '$lib/config/website';
 	import markerIconRetinaURL from 'leaflet/dist/images/marker-icon-2x.png';
 	import markerIconURL from 'leaflet/dist/images/marker-icon.png';

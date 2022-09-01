@@ -136,7 +136,7 @@ For lazyloading, load the vanilla-lazyload script into the document in a layout 
 
 ```svelte
   import lazyload from 'vanilla-lazyload';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
 
   if (browser && !document.lazyloadInstance) {
     document.lazyloadInstance = new lazyload();
@@ -148,7 +148,7 @@ Then use the `Image` component on a page:
 ```svelte
 <script>
 	import { onMount } from 'svelte';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import { Image } from '@rodneylab/sveltekit-components';
 
 	import meta from '$lib/assets/your-image.jpg?w=768&metadata';
