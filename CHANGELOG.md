@@ -1,3 +1,10 @@
+## 1.0.2 (2022-09-23)
+
+### Fix
+
+- **dependencies**: 💫 update packages
+- 💫 add name field to inputs
+
 ## 1.0.1 (2022-09-02)
 
 ### Fix
