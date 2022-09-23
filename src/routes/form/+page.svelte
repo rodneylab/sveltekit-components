@@ -51,6 +51,7 @@
 	<h2>Comment Form Example</h2>
 	<form on:submit|preventDefault={handleSubmit}>
 		<TextInputField
+			name="name"
 			value={name}
 			id="form-name"
 			placeholder="Blake Jones"
@@ -62,6 +63,7 @@
 			style="padding-bottom:1rem"
 		/>
 		<EmailInputField
+			name="email"
 			value={email}
 			id="form-email"
 			placeholder="blake@example.com"
@@ -73,6 +75,7 @@
 			style="padding-bottom:1rem"
 		/>
 		<TextArea
+			name="message"
 			value={message}
 			id="form-message"
 			placeholder="Enter your message here"
@@ -90,6 +93,7 @@
 	<h2>Login Form Example</h2>
 	<form on:submit|preventDefault={handleSubmit}>
 		<EmailInputField
+			name="email"
 			value={email}
 			id="login-email"
 			placeholder="blake@example.com"
@@ -101,6 +105,7 @@
 			style="padding-bottom:1rem"
 		/>
 		<PasswordInputField
+			name="password"
 			value={password}
 			id="login-password"
 			placeholder="P@$sw0rD"
