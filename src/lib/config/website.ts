@@ -1,5 +1,7 @@
+import { PUBLIC_MAPBOX_ACCESS_TOKEN } from '$env/static/public';
+
 const website = {
-	mapboxAccessToken: import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string,
+	mapboxAccessToken: PUBLIC_MAPBOX_ACCESS_TOKEN,
 };
 
 export { website as default };

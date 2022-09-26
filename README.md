@@ -206,19 +206,7 @@ Add a map to your SvelteKit site using <a aria-label="Learn more about Map box" 
 ">LeafletJS</a>. Requires a Mapbox access token, just add it your to the `.env` file in your project:
 
 ```plaintext
-VITE_MAPBOX_ACCESS_TOKEN=your.token
-```
-
-If you don't yet have environment variables configured in your project, add the `dotenv` package:
-
-```shell
-pnpm install -D dotenv
-```
-
-And the add it in your `svelte.config.js` file:
-
-```javascript
-import 'dotenv/config';
+PUBLIC_MAPBOX_ACCESS_TOKEN=your.token
 ```
 
 Add the component to a `.svelte` file in your project:
