@@ -1,3 +1,10 @@
+## 1.0.3 (2022-11-16)
+
+### Fix
+
+- **dependencies**: 💫 update packages
+- 💫 update environment variable handling
+
 ## 1.0.2 (2022-09-23)
 
 ### Fix
