@@ -1,3 +1,9 @@
+## 2.0.0 (2022-12-01)
+
+### Refactor
+
+- 🏄🏽 move Map component to separate package
+
 ## 1.0.3 (2022-11-16)
 
 ### Fix
