@@ -4,7 +4,6 @@
 		<span class="element"
 			><a aria-label="Open form example" href="/form">Form Input Fields Example</a></span
 		>
-		<span class="element"> <a aria-label="Open map example" href="/map">Map Example</a></span>
 	</nav>
 </header>
 

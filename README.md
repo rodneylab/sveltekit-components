@@ -20,7 +20,7 @@ Library of TypeScript friendly SvelteKit components for adding functionality to 
 To install the package run
 
 ```shell
-pnpm add -D @rodneylab/sveltekit-components
+pnpm add -D @rodneylab/sveltekit-components @rodneylab/sveltekit-map-component
 pnpm add --save-peer leaflet
 ```
 
@@ -213,7 +213,7 @@ Add the component to a `.svelte` file in your project:
 
 ```svelte
 <script>
-	import { Map } from '@rodneylab/sveltekit-components';
+	import { Map } from '@rodneylab/sveltekit-map-component';
 	const latitude = 51.50162;
 	const longitude = -0.14115;
 	const zoom = 16;
