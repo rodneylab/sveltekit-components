@@ -32,7 +32,6 @@
 			{placeholder}
 			{title}
 			{spellcheck}
-			type="text"
 		/>
 	</InputField>
 </div>
