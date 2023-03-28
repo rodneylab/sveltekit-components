@@ -1,3 +1,10 @@
+## 2.0.2 (2023-03-28)
+
+### Fix
+
+- 💫 update for svelte-package 2
+- 💫 update packages
+
 ## 2.0.1 (2023-03-27)
 
 ### Fix
