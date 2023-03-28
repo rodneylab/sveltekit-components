@@ -11,7 +11,6 @@
 		"mapbox",
 		"openstreetmap"
 	],
-	"svelte": "index.js",
 	"scripts": {
 		"dev": "vite dev --https",
 		"build": "vite build",
@@ -29,7 +28,7 @@
 		"@commitlint/config-conventional": "^17.4.4",
 		"@sveltejs/adapter-static": "^2.0.1",
 		"@sveltejs/kit": "^1.14.0",
-		"@sveltejs/package": "1.0.2",
+		"@sveltejs/package": "2.0.2",
 		"@types/node": "^18.15.10",
 		"@typescript-eslint/eslint-plugin": "^5.56.0",
 		"@typescript-eslint/parser": "^5.56.0",
@@ -55,5 +54,19 @@
 	"bugs": {
 		"url": "https://github.com/rodneylab/sveltekit-components/issues"
 	},
-	"type": "module"
+	"type": "module",
+	"exports": {
+		".": "./dist/index.js",
+		".package.json": "./package.json",
+		"./EmailInputField.svelte": "./dist/EmailInputField.svelte",
+		"./Image.svelte": "./dist/Image.svelte",
+		"./InputField.svelte": "./dist/Image.svelte",
+		"./PasswordInputField.svelte": "./dist/PasswordInputField.svelte",
+		"./TextArea.svelte": "./dist/TextArea.svelte",
+		"./TextInputField.svelte": "./dist/TextInputField.svelte"
+	},
+	"peerDependencies": {
+		"svelte": "^3.57.0"
+	},
+	"svelte": "./dist/index.js"
 }
