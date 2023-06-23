@@ -1,3 +1,9 @@
+## 3.0.0 (2023-06-23)
+
+### Fix
+
+- **dependencies**: 💫 update packages
+
 ## 2.0.2 (2023-03-28)
 
 ### Fix
