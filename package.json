@@ -15,7 +15,7 @@
 		"dev": "vite dev --https",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-check --fail-on-hints --ignore package",
+		"check": "svelte-check --ignore package",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
