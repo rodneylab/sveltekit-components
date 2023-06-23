@@ -1,9 +1,9 @@
 /// <reference types="@sveltejs/kit" />
 
 export declare global {
-	declare namespace svelte.JSX {
+	namespace svelte.JSX {
 		interface HTMLProps {
-			importance?: 'auto' | 'high' | 'low' | undefined;
+			fetchpriority?: 'auto' | 'high' | 'low' | undefined;
 		}
 	}
 }
