@@ -12,7 +12,7 @@ declare const __propDef: {
 		width: number;
 		maxWidth?: string;
 		sizes?: string;
-		importance?: 'auto' | 'high' | 'low' | undefined;
+		fetchpriority?: 'auto' | 'high' | 'low' | undefined;
 		loading?: 'lazy' | 'eager';
 		style?: string;
 	};
