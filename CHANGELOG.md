@@ -1,3 +1,10 @@
+## Unreleased
+
+### Fix
+
+- **dependencies**: 💫 update packages
+- 💫 update image tag attributes
+
 ## 3.0.0 (2023-06-23)
 
 ### Fix
