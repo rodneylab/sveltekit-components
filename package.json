@@ -1,7 +1,7 @@
 {
 	"name": "@rodneylab/sveltekit-components",
 	"description": "Handy components for building sites in SvelteKit",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"author": "Rodney Lab <ask@rodneylab.com> (@rodneyLab)",
 	"license": "BSD-3-Clause",
 	"keywords": [
@@ -19,7 +19,6 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin=prettier-plugin-svelte .",
 		"lint": "prettier --ignore-path .gitignore --check --plugin=prettier-plugin-svelte . && eslint --ignore-path .gitignore .",
-		"prepare": "husky install",
 		"prettier:check": "prettier --check --plugin=prettier-plugin-svelte .",
 		"svelte-check": "svelte-check --fail-on-hints --ignore package"
 	},
@@ -72,7 +71,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": ">=3 <5"
+		"svelte": ">=3 <6"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts"
