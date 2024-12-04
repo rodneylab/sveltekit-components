@@ -19,7 +19,6 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin=prettier-plugin-svelte .",
 		"lint": "prettier --ignore-path .gitignore --check --plugin=prettier-plugin-svelte . && eslint --ignore-path .gitignore .",
-		"prepare": "husky install",
 		"prettier:check": "prettier --check --plugin=prettier-plugin-svelte .",
 		"svelte-check": "svelte-check --fail-on-hints --ignore package"
 	},
