@@ -72,7 +72,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": ">=3 <5"
+		"svelte": ">=3 <6"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts"
