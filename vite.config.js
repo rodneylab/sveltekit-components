@@ -1,9 +1,8 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import basicSsl from '@vitejs/plugin-basic-ssl';
+import { defineConfig } from 'vite';
 
 /** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig({
 	plugins: [basicSsl(), sveltekit()],
-};
-
-export default config;
+});

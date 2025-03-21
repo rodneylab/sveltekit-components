@@ -15,36 +15,36 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-check --ignore package",
+		"check": "svelte-check",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin=prettier-plugin-svelte .",
-		"lint": "prettier --ignore-path .gitignore --check --plugin=prettier-plugin-svelte . && eslint --ignore-path .gitignore .",
-		"prettier:check": "prettier --check --plugin=prettier-plugin-svelte .",
-		"svelte-check": "svelte-check --fail-on-hints --ignore package"
+		"lint": "prettier --check --plugin=prettier-plugin-svelte . && eslint .",
+		"prettier:check": "prettier --check --plugin=prettier-plugin-svelte ."
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.2.2",
-		"@commitlint/config-conventional": "^19.2.2",
-		"@sveltejs/adapter-static": "^3.0.1",
-		"@sveltejs/kit": "^2.5.6",
-		"@sveltejs/package": "2.3.1",
-		"@types/node": "^20.12.7",
-		"@typescript-eslint/eslint-plugin": "^7.7.0",
-		"@typescript-eslint/parser": "^7.7.0",
-		"@vitejs/plugin-basic-ssl": "^1.1.0",
-		"eslint": "^9.0.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.37.0",
-		"husky": "^9.0.11",
-		"prettier": "^3.2.5",
-		"prettier-plugin-svelte": "^3.2.3",
-		"svelte": "^4.2.14",
-		"svelte-check": "^3.6.9",
-		"svelte-preprocess": "^5.1.4",
-		"svelte2tsx": "^0.7.6",
-		"tslib": "^2.6.2",
-		"typescript": "^5.4.5",
-		"vite": "^5.2.9"
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.20.1",
+		"@sveltejs/package": "2.3.10",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@types/node": "^22.13.10",
+		"@typescript-eslint/eslint-plugin": "^8.27.0",
+		"@typescript-eslint/parser": "^8.27.0",
+		"@vitejs/plugin-basic-ssl": "^2.0.0",
+		"eslint": "^9.22.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-svelte": "^3.3.3",
+		"husky": "^9.1.7",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.3.3",
+		"svelte": "^5.23.2",
+		"svelte-check": "^4.1.5",
+		"svelte-preprocess": "^6.0.3",
+		"svelte2tsx": "^0.7.35",
+		"tslib": "^2.8.1",
+		"typescript": "^5.8.2",
+		"vite": "^6.2.2"
 	},
 	"repository": {
 		"type": "git",
@@ -54,25 +54,23 @@
 		"url": "https://github.com/rodneylab/sveltekit-components/issues"
 	},
 	"type": "module",
-	"exports": {
-		".": "./dist/index.js",
-		"svelte": "./dist/index.js",
-		".package.json": "./package.json",
-		"./EmailInputField.svelte": "./dist/EmailInputField.svelte",
-		"./Image.svelte": "./dist/Image.svelte",
-		"./InputField.svelte": "./dist/Image.svelte",
-		"./PasswordInputField.svelte": "./dist/PasswordInputField.svelte",
-		"./TextArea.svelte": "./dist/TextArea.svelte",
-		"./TextInputField.svelte": "./dist/TextInputField.svelte"
+	"peerDependencies": {
+		"svelte": ">=5 <6"
 	},
 	"files": [
-		"dist",
-		"!dist/**/*.test.*",
-		"!dist/**/*.spec.*"
+		"dist"
 	],
-	"peerDependencies": {
-		"svelte": ">=3 <6"
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		}
 	},
 	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts"
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild",
+			"svelte-preprocess"
+		]
+	}
 }
