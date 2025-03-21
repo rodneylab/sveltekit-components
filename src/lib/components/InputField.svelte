@@ -1,11 +1,21 @@
 <script lang="ts">
-	export let id: string;
-	export let title: string;
-	export let error: string | null = null;
+	import type { Snippet } from 'svelte';
+
+	let {
+		id,
+		title,
+		error = null,
+		children,
+	}: {
+		id: string;
+		title: string;
+		error: string | null;
+		children: Snippet;
+	} = $props();
 </script>
 
 <span class="screen-reader-text"><label for={id}>{title}</label></span>
-<slot />
+{@render children?.()}
 {#if error}
 	<small id={`${id}-error`} class="error-text">{error}</small>
 {/if}

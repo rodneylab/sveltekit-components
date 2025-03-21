@@ -1,25 +1,39 @@
-<script>
+<script lang="ts">
 	import InputField from './InputField.svelte';
-	import { createEventDispatcher } from 'svelte';
-	export let name = undefined;
-	export let value;
-	export let required = false;
-	export let placeholder;
-	export let id;
-	export let title;
-	export let error = null;
-	export let rows = 5;
-	export let style = '';
-	export let spellcheck = false;
-	const dispatch = createEventDispatcher();
+
+	let {
+		name = undefined,
+		value,
+		required = false,
+		placeholder,
+		id,
+		title,
+		error = null,
+		rows = 5,
+		style = '',
+		spellcheck = false,
+		update,
+	}: {
+		name?: string;
+		value: string;
+		required?: boolean;
+		placeholder: string;
+		id: string;
+		title: string;
+		error?: string | null;
+		rows?: number;
+		style?: string;
+		spellcheck?: boolean;
+		update?: (value: string) => void;
+	} = $props();
 </script>
 
 <div {style}>
 	<InputField {id} {title} {error}>
 		<textarea
 			bind:value
-			on:change={() => {
-				dispatch('update', value);
+			onchange={() => {
+				update && update(value);
 			}}
 			{name}
 			{required}
@@ -30,7 +44,7 @@
 			{placeholder}
 			{title}
 			{spellcheck}
-		/>
+		></textarea>
 	</InputField>
 </div>
 

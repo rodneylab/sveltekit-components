@@ -1,15 +1,29 @@
-<script>
-	export let alt;
-	export let height; // needed to reduce CLS
-	export let src;
-	export let sources;
-	export let placeholder;
-	export let width; // needed to reduce CLS
-	export let maxWidth = '1280px';
-	export let sizes = `(max-width: ${maxWidth}) 100vw, ${maxWidth}}`;
-	export let fetchpriority = undefined;
-	export let loading = 'lazy';
-	export let style = '';
+<script lang="ts">
+	let {
+		alt,
+		height, // needed to reduce CLS
+		src,
+		sources,
+		placeholder,
+		width, // needed to reduce CLS
+		maxWidth = '1280px',
+		sizes = `(max-width: ${maxWidth}) 100vw, ${maxWidth}}`,
+		fetchpriority = undefined,
+		loading = 'lazy',
+		style = '',
+	}: {
+		alt: string;
+		height: number; // needed to reduce CLS
+		src: string;
+		sources: { srcset: string; type: string }[];
+		placeholder: string;
+		width: number; // needed to reduce CLS
+		maxWidth: string;
+		sizes: string;
+		fetchpriority: 'auto' | 'high' | 'low' | undefined;
+		loading: 'lazy' | 'eager';
+		style: string;
+	} = $props();
 </script>
 
 <picture>
@@ -26,7 +40,7 @@
 		{height}
 		data-src={src}
 		src={placeholder}
-		style={`max-width:${maxWidth};${style}`}
+		style="max-width:{maxWidth};{style}"
 	/>
 </picture>
 

@@ -1,4 +1,10 @@
-## Unreleased
+## 3.0.2 (2024-12-04)
+
+### Fix
+
+- 🐝 bump Svelte peer dependency requirement
+
+## 3.0.1 (2024-04-17)
 
 ### Fix
 

@@ -1,23 +1,35 @@
-<script>
+<script lang="ts">
 	import InputField from './InputField.svelte';
-	import { createEventDispatcher } from 'svelte';
-	export let name = undefined;
-	export let value;
-	export let required = false;
-	export let placeholder = 'P@$sw0rd!';
-	export let id;
-	export let title = 'Password';
-	export let error = null;
-	export let style = '';
-	const dispatch = createEventDispatcher();
+
+	let {
+		name = undefined,
+		value,
+		required = false,
+		placeholder = 'P@$sw0rd!',
+		id,
+		title = 'Password',
+		error = null,
+		style = '',
+		update,
+	}: {
+		name?: string;
+		value: string;
+		required?: boolean;
+		placeholder?: string;
+		id: string;
+		title?: string;
+		error?: string | null;
+		style?: string;
+		update?: (value: string) => void;
+	} = $props();
 </script>
 
 <div {style}>
 	<InputField {id} {title} {error}>
 		<input
 			bind:value
-			on:change={() => {
-				dispatch('update', value);
+			onchange={() => {
+				update && update(value);
 			}}
 			{name}
 			{required}

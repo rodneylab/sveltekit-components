@@ -57,8 +57,8 @@
 			placeholder="Blake Jones"
 			title="Name"
 			error={errors?.name ?? null}
-			on:update={(event) => {
-				name = event.detail;
+			update={(value) => {
+				name = value;
 			}}
 			style="padding-bottom:1rem"
 		/>
@@ -69,8 +69,8 @@
 			placeholder="blake@example.com"
 			title="Email"
 			error={errors?.email ?? null}
-			on:update={(event) => {
-				email = event.detail;
+			update={(value) => {
+				email = value;
 			}}
 			style="padding-bottom:1rem"
 		/>
@@ -82,8 +82,8 @@
 			title="Message"
 			spellcheck
 			error={errors?.message ?? null}
-			on:update={(event) => {
-				message = event.detail;
+			update={(value) => {
+				message = value;
 			}}
 			style="padding-bottom:1rem"
 		/>
@@ -99,8 +99,8 @@
 			placeholder="blake@example.com"
 			title="Email"
 			error={errors?.email ?? null}
-			on:update={(event) => {
-				email = event.detail;
+			update={(value) => {
+				email = value;
 			}}
 			style="padding-bottom:1rem"
 		/>
@@ -111,8 +111,8 @@
 			placeholder="P@$sw0rD"
 			title="Password"
 			error={errors?.password ?? null}
-			on:update={(event) => {
-				password = event.detail;
+			update={(value) => {
+				password = value;
 			}}
 			style="padding-bottom:1rem;border-style:none"
 		/>
